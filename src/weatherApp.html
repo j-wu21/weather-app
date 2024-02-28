@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to icons and libraries-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>  
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+    crossorigin="anonymous"></script>
+    <script src="weatherApp.js" defer></script>
+  </head>
+  <body class="animate__animated animate__zoomIn animate_">
+    
+    <div class="wrapper">
+      
+    
+      <header><i class='bx bx-left-arrow-alt'></i>Weather Application</header>
+      <section class="input-part">
+        <p class="info-txt"></p>
+        <div class="content">
+          <input type="text" spellcheck="false" placeholder="Enter city name" required>
+          <button class="enterButton">Enter</button>
+          <div class="separator"></div>
+          <button class="locationButton">Get Current Device Location</button>
+        </div>
+      </section>
+      <section class="weather-part">
+        <div class="datedetail"><p id="datenow">1/2/2022</p></div></br>
+        <img src="" alt="Weather Icon">
+        <div class="temp">
+          <span class="numb">_</span>
+          <span class="deg">°</span>
+          <span class="CorF">F</span>
+         
+        </div> 
+        <div id="changeUnit"></div>
+        <div class="weather">_ _</div>
+        <div class="location">
+          <i class='bx bx-map'></i>
+          <span>_, _</span>
+        </div>
+        <div class="bottom-details">
+          <div class="column feels">
+            <i class='bx bxs-thermometer'></i>
+            <div class="details">
+              <div class="temp">
+                <span class="numb-2">_</span>
+                <span class="deg">°</span>
+                <span class="CorF-2">F</span>
+              </div>
+              <p>Feels like</p>
+            </div>
+          </div>
+          <div class="column humidity">
+            <i class='bx bxs-droplet-half'></i>
+            <div class="details">
+              <span>_</span>
+              <p>Humidity</p>
+            </div>
+          </div>
+
+
+          <div class="column wind">
+            <i class='bx bx-wind'></i>
+            <div class="details">
+              <span class="speed">_</span>
+              <span id="speedunit">mph</span>
+              <p>Wind</p>
+            </div>
+          </div>
+
+          <div class="column winddirection">
+            <i class='bx bxl-tailwind-css'></i>
+            <div class="details">
+              <span>_</span>
+              <p>Direction</p>
+            </div>
+          </div>
+
+
+
+
+        </div>
+      </section>
+   
+    
+</div>
+  
+ </div></body>
+</html>
